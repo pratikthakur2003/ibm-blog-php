@@ -14,7 +14,7 @@ class Database
 
     private function connect()
     {
-        $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->database, 3307);
+        $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->database, 3306);
         // $this->conn = mysqli_connect($this->servername, $this->username, $this->password, $this->database, 3307);
         
         if ($this->conn->connect_error) {
@@ -34,4 +34,5 @@ class Database
 }
 $db = new Database();
 $conn = $db->getConnection();
+
 ?>

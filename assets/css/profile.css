@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #f9fafb, #eef2f7);
+    color: #333;
+    line-height: 1.6;
+}
+
+.header-links {
+    width: 40%;
+    gap: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover-photo {
+    width: 100%;
+    height: 180px;
+    background: url("../data/cover.jpg") no-repeat center/cover;
+    position: relative;
+}
+
+.profile-info {
+    position: relative;
+    text-align: center;
+    max-width: 700px;
+    padding: 0px 20px 20px;
+}
+
+.profile-pic {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.edit-icon {
+    color: #666;
+    font-size: 18px;
+    margin-left: 8px;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.edit-icon:hover {
+    color: #8e44ad;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #444;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8e44ad;
+}
+
+.bio {
+    font-size: 15px;
+    color: #666;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: #ddd;
+}
+
+.btn.purple {
+    background: linear-gradient(45deg, #ff5f6d, #ffc371);
+    color: #fff;
+}
+
+.btn.purple:hover {
+    background: #732d91;
+}
+
+.bio form {
+    margin-top: 10px;
+}
+
+.bio textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.bio button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: linear-gradient(45deg, #ff5f6d, #ffc371);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.bio button:hover {
+    background-color: #4b006f;
+}
+
+.bio p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+    white-space: pre-wrap; 
+}
